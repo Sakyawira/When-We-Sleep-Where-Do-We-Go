@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 609c21b15d85ad243b41ed47d3425f37, type: 3}
   m_Name: NoScarf
   m_EditorClassIdentifier: 
-  _idleLeft: {fileID: 7400000, guid: f8a2432c67c4b584ab6a7744529ad20c, type: 2}
-  _idleRight: {fileID: 7400000, guid: 7b4ebe1083b45ac40a93b21874c8d8ba, type: 2}
-  _walkLeft: {fileID: 7400000, guid: 3e1057ee20b469c4b8e5bafd921898d3, type: 2}
-  _walkRight: {fileID: 7400000, guid: 0f4c29685febeec4cad7a3822f56665b, type: 2}
+  _idleLeft: {fileID: 7400000, guid: 4d83010097ffcfa4e91d8eb0fa46d1e5, type: 2}
+  _idleRight: {fileID: 7400000, guid: 6f495085a90b5054aba831cd2a444496, type: 2}
+  _walkLeft: {fileID: 7400000, guid: 5f63ca4e0f2286e429635ed33935e435, type: 2}
+  _walkRight: {fileID: 7400000, guid: 391765536c5d27a4d9a3acf1399b2175, type: 2}

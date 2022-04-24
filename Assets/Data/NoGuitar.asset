@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 609c21b15d85ad243b41ed47d3425f37, type: 3}
   m_Name: NoGuitar
   m_EditorClassIdentifier: 
-  _idleLeft: {fileID: 7400000, guid: c7fe204c05ebbd8479052bfd73187628, type: 2}
-  _idleRight: {fileID: 7400000, guid: 1f906a5e4d69ca54590dad791b55b8f8, type: 2}
-  _walkLeft: {fileID: 7400000, guid: 7bd76a178c2a74f43a362981b4fa5f3c, type: 2}
-  _walkRight: {fileID: 7400000, guid: 47aee05adcb98a34dbdb15f7bc2f03a0, type: 2}
+  _idleLeft: {fileID: 7400000, guid: f39070ef6d960a441ab2c25422387f9d, type: 2}
+  _idleRight: {fileID: 7400000, guid: f77ae099bbb6cda48927d2393588314a, type: 2}
+  _walkLeft: {fileID: 7400000, guid: b746b196de108b143b595d0751e61710, type: 2}
+  _walkRight: {fileID: 7400000, guid: 086aedd447f991c40a561fd4ebb5eafe, type: 2}

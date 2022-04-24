@@ -28,7 +28,7 @@ public class AnimationSwap : MonoBehaviour
         _animator = gameObject.GetComponent<Animator>();
     }
 
-    public void Swap(AnimationStage animationStage)
+    private void Swap(AnimationStage animationStage)
     {
         AnimatorOverrideController aoc = new AnimatorOverrideController(_animator.runtimeAnimatorController);
         var anims = new List<KeyValuePair<AnimationClip, AnimationClip>>();
@@ -76,5 +76,20 @@ public class AnimationSwap : MonoBehaviour
         }
         aoc.ApplyOverrides(anims);
         _animator.runtimeAnimatorController = aoc;
+    }
+
+    public void SwapToNoScarf()
+    {
+        Swap(AnimationStage.NoScarf);
+    }
+
+    public void SwapToNoHair()
+    {
+        Swap(AnimationStage.NoHair);
+    }
+
+    public void SwapToNoGuitar()
+    {
+        Swap(AnimationStage.NoGuitar);
     }
 }
