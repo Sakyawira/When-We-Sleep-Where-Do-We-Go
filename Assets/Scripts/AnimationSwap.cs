@@ -23,9 +23,13 @@ public class AnimationSwap : MonoBehaviour
     [SerializeField]
     private PlayableCharacterClipSuite _noScarfSuite;
 
+    [SerializeField]
+    private AnimationStage _startingSuite;
+
     private void Start()
     {
         _animator = gameObject.GetComponent<Animator>();
+        Swap(_startingSuite);
     }
 
     private void Swap(AnimationStage animationStage)

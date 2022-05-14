@@ -10,7 +10,7 @@ public enum ClipType
     WalkRight
 }
 
-[CreateAssetMenu(menuName = "Data", fileName = "Playable Character Clip Suite")]
+[CreateAssetMenu(menuName = "Data/Playable Character Clip Suite", fileName = "Playable Character Clip Suite")]
 public class PlayableCharacterClipSuite : ScriptableObject
 {
     [SerializeField]

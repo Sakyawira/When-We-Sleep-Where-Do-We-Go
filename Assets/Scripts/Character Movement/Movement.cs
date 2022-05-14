@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     [SerializeField]
     private float _movementSpeed = 3.0f;
@@ -16,19 +16,22 @@ public class PlayerMovement : MonoBehaviour
     public Vector2 _movement;
     private float _tempSpeed = 0.0f;
     private Vector2 _idleDir;
-   
 
-    void Start()
+    protected void Start()
     {
         _tempSpeed = _movementSpeed;
-        
     }
-    // Update is called once per frame
-    void Update()
+
+    protected void FixedUpdate()
+    {
+        _rigidBody.MovePosition(_rigidBody.position + _movement * _movementSpeed * Time.fixedDeltaTime);
+    }
+
+    protected void UpdateMove(float movementX)
     {
         if (_inputSwitch)
         {
-            _movement.x = Input.GetAxisRaw("Horizontal");
+            _movement.x = movementX;
             // _movement.y = Input.GetAxisRaw("Vertical");
 
             if (_movement.x != 0)
@@ -46,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
         _playerAnimator.SetFloat("Horizontal", _idleDir.x);
         _playerAnimator.SetFloat("Vertical", _idleDir.y);
         _playerAnimator.SetFloat("Speed", _movement.SqrMagnitude());
-        
+
         if (_movement.x != 0.0f && _movement.y != 0.0f)
         {
             _movementSpeed = Mathf.Sqrt(_tempSpeed * _tempSpeed / 2);
@@ -56,11 +59,4 @@ public class PlayerMovement : MonoBehaviour
             _movementSpeed = _tempSpeed;
         }
     }
-
-    void FixedUpdate()
-    {
-        _rigidBody.MovePosition(_rigidBody.position + _movement * _movementSpeed * Time.fixedDeltaTime);
-    }
-
-   
 }
