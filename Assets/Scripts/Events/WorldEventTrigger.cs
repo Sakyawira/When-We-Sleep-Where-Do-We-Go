@@ -12,4 +12,9 @@ public class WorldEventTrigger : MonoBehaviour
     {
         _worldEvent?.Invoke();
     }
+
+    public void Trigger()
+    {
+        _worldEvent?.Invoke();
+    }
 }

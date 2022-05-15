@@ -486,6 +486,7 @@ GameObject:
   - component: {fileID: 127735564}
   - component: {fileID: 127735563}
   - component: {fileID: 127735565}
+  - component: {fileID: 127735566}
   m_Layer: 0
   m_Name: HOSPITAL_OVER
   m_TagString: Untagged
@@ -580,6 +581,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &127735566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127735562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e001545911e154eb90d274c8088c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3767643619611190717}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &195983062
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,7 +2024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.4019995
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2842,7 +2870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.925
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3227,11 +3255,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.37
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4040,7 +4068,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.83
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4625,7 +4653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6010,7 +6038,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.y
