@@ -2290,90 +2290,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &511659917
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 511659918}
-  - component: {fileID: 511659919}
-  m_Layer: 0
-  m_Name: HAIRCUT_OVER
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &511659918
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511659917}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.8125, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1994294635}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &511659919
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511659917}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1e235f5eb459ee94fbf2d50b57bba15f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 11.78, y: 15.01}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2841,16 +2757,68 @@ PrefabInstance:
       value: WorldEventTrigger (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 61490338}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1259758577}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 3767643619611190717}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenGameObject
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: CloseSelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: DisableMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: OpenObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CloseObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_RootOrder
@@ -3395,6 +3363,7 @@ GameObject:
   - component: {fileID: 724528357}
   - component: {fileID: 724528356}
   - component: {fileID: 724528358}
+  - component: {fileID: 724528359}
   m_Layer: 0
   m_Name: HAIRCUT_UNDER (4)
   m_TagString: Untagged
@@ -3505,6 +3474,33 @@ MonoBehaviour:
   - {fileID: 1557973814}
   - {fileID: 1082631561}
   - {fileID: 847294279}
+--- !u!114 &724528359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724528354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e001545911e154eb90d274c8088c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3767643619611190717}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &739891895
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,7 +4048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalScale.x
@@ -4411,6 +4407,7 @@ GameObject:
   - component: {fileID: 944832766}
   - component: {fileID: 944832767}
   - component: {fileID: 944832768}
+  - component: {fileID: 944832769}
   m_Layer: 0
   m_Name: GUITAR_OVER
   m_TagString: Untagged
@@ -4505,6 +4502,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &944832769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 944832765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e001545911e154eb90d274c8088c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3767643619611190717}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &958114052
 GameObject:
   m_ObjectHideFlags: 0
@@ -4636,16 +4660,68 @@ PrefabInstance:
       value: WorldEventTrigger (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 982247819}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3767643619611190717}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 982247822}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenGameObject
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisableMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CloseSelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: OpenObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CloseObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_RootOrder
@@ -4716,6 +4792,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameObject: {fileID: 944832765}
+--- !u!114 &982247822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982247818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6730144bfb70540ab532a2683a2491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjects: []
 --- !u!1 &1082631561
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,6 +5356,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1259758574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7017508501229708387, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+  m_PrefabInstance: {fileID: 605081381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1259758577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259758574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6730144bfb70540ab532a2683a2491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjects: []
 --- !u!1 &1298755768
 GameObject:
   m_ObjectHideFlags: 0
@@ -5815,6 +5922,7 @@ GameObject:
   - component: {fileID: 1503954946}
   - component: {fileID: 1503954945}
   - component: {fileID: 1503954947}
+  - component: {fileID: 1503954948}
   m_Layer: 0
   m_Name: SCARF_OVER 4
   m_TagString: Untagged
@@ -5925,6 +6033,33 @@ MonoBehaviour:
   - {fileID: 1362499277}
   - {fileID: 195983062}
   - {fileID: 606098309}
+--- !u!114 &1503954948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503954943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e001545911e154eb90d274c8088c0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _worldEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3767643619611190717}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: EnableMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1525786775
 GameObject:
   m_ObjectHideFlags: 0
@@ -6021,16 +6156,68 @@ PrefabInstance:
       value: WorldEventTrigger (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1533469007}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3767643619611190717}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1533469010}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OpenGameObject
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: DisableMovement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CloseSelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: OpenObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CloseObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017508501229708388, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
+      propertyPath: _worldEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_RootOrder
@@ -6038,7 +6225,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 7017508501229708389, guid: afbda047ae70e964cbb92b91fa890f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6101,6 +6288,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameObject: {fileID: 1362499277}
+--- !u!114 &1533469010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533469006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6730144bfb70540ab532a2683a2491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameObjects: []
 --- !u!1 &1545729549
 GameObject:
   m_ObjectHideFlags: 0
@@ -7172,7 +7372,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1994294635}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1978981903
 SpriteRenderer:
@@ -7263,7 +7463,6 @@ Transform:
   - {fileID: 847294280}
   - {fileID: 724528355}
   - {fileID: 1588326493}
-  - {fileID: 511659918}
   - {fileID: 1978981902}
   - {fileID: 825902802}
   m_Father: {fileID: 0}

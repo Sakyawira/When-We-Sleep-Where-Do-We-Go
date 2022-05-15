@@ -15,6 +15,13 @@ public class PlayerMovement : Movement
     }
     private void Update()
     {
-        UpdateMove(Input.GetAxisRaw("Horizontal"));
+        if (_isMovementEnabled)
+        {
+            UpdateMove(Input.GetAxisRaw("Horizontal"));
+        }
+        else
+        {
+            UpdateMove(0);
+        }
     }
 }
