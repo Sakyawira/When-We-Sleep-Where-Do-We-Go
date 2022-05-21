@@ -12,34 +12,43 @@ public class Footstep : MonoBehaviour
 
     [SerializeField]
     private AudioSource _audioSource;
-    // Start is called before the first frame update
+
+    [SerializeField]
+    private PlayerMovement _playerMovement;
+
     void Start()
     {
         _audioSource.clip = _footstep1Clip;
-        // _audioSource.loop = true;
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
-        if (Input.GetAxisRaw("Horizontal") != 0)
+        if (_playerMovement.IsMovementEnabled())
         {
-            if (!_audioSource.isPlaying)
+            if(!_playerMovement.IsLeftMovementEnabled() && Input.GetAxisRaw("Horizontal") < 0)
             {
-                //if (Random.Range(0, 2) == 0)
-                //{
-                //    if (_audioSource.clip == _footstep1Clip)
-                //    {
-                //        _audioSource.clip = _footstep2Clip;
+                return;
+            }
+            if (Input.GetAxisRaw("Horizontal") != 0)
+            {
+                if (!_audioSource.isPlaying)
+                {
+                    //if (Random.Range(0, 2) == 0)
+                    //{
+                    //    if (_audioSource.clip == _footstep1Clip)
+                    //    {
+                    //        _audioSource.clip = _footstep2Clip;
 
-                //    }
-                //    else
-                //    {
-                //        _audioSource.clip = _footstep1Clip;
-                //    }
-                //}
-                _audioSource.Play();
+                    //    }
+                    //    else
+                    //    {
+                    //        _audioSource.clip = _footstep1Clip;
+                    //    }
+                    //}
+                    _audioSource.Play();
+                }
             }
         }
+     
     }
 }
