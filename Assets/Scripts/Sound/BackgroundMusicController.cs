@@ -14,7 +14,7 @@ public class BackgroundMusicController : MonoBehaviour
 
     private float _duration;
 
-    private void Start()
+    private void OnEnable()
     {
         _introAudioSource.clip = _introMusicClip;
         _introAudioSource.loop = false;
